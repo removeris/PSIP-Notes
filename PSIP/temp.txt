@@ -1,0 +1,162 @@
+PS produkto vizija - paprastas ir glaustas teiginys apibrėžiantis produkto esmę
+> Koks : Kas(Naudotojai) : Kodėl <
+
+Šablonas - KAM, KAS, PAVADINIMAS, PRIVALUMAS, KONKURENTAI, SKIRTUMAS
+
+PS gyvavimo ciklas:
+Idėja > Specifikacija > Projektavimas > Įgyvendinimas > Palaikymas/Naudojimas
+
+PS savybes:
+> Funkcionali
+> Paprasta
+> Lanksti (lengvai keičiasi)
+> Patikima/Saugi
+> Efektyi/greitaeigiška
+> Suderinama (su kitom)
+
+*PS testavimas - PS elgsenos tikrinimas
+
+*Komponentas - vykdomojo kodo blogas, realizuojantis vieną ar kelias funkcijas prieinamus per nekeičiamus interfeisus
+
+*PSI projektavimo šablonas - bendros kartotinis PS projektavimo problemos sprendimas
+
+PS Pagal užsakymo būdą:
+> Bendro naudojimo PS - sąvarankiškos
+> Pagal užsakymą PS - sukurtos pagal užsakovo poreikius
+
+PS pagal funkcionalumą:
+> Dalykinės programos - sukurtos atlikti tam tikrus uždavinius [teksto redaktoriai, apskaitos PS]
+> Programėlės - su ribotais resursai [Telefono PS]
+> Sisteminės programos - kompiuterinėms programoms paleisti ir vykdyti [OS, Drivers]
+> Kompiuterio programavimo įrankiai - [Compiler, Linker]
+
+PS pagal dalykinę sritį:
+> Autonominė - veikianti viena pati
+> Interaktyviosios transakcinės sistemos(nutolusios) - veikia nutolusiuose kompiuteriuose [Cloud-based, e-commerce]
+> Centralizuotos sistemos - resursai ir valdymas centralizuoti
+> Išskirstytos - Komponentai fiziškai saugomi skirtingose vietose
+> Įterptosios - valdančios techninę įrangą
+> Paketinės - apdoroja duomenis dideliais paketais
+> Realaus laiko - reaguojančios į tikro pasaulio įvykius
+> Pramoginės - sukurtos pramogai [Žaidimai]
+> Modeliavimui ir simuliacijai 
+> Duomenų rinkimo
+> Sistemų sistemos - sistemos sudarytos iš kitų PS
+
+*Projektas - sprendimas sukurtas vienam konkrečiam klientui {Parduodamas/vykdomas 1 kartą}
+
+*PS produktų linija - sistema suprojektuota, kad atitiktų klientų poreikius, keičiant šaltinio kodo dalį.
+
+*Platforma - pateikia funkcijų rinkinį, kurį galima naudoti kuriant naujas funkcijas
+
+Produkto prototipų kūrimas - ankstyvos produkto versijos kūrimo procesas. : Leidžia demonstruoti, Organizuoti galutinę versiją, nustatyti komponentus ir paslaugas
+
+Agile paradigma - iteracinis PS kūrimas ir pristatymas
+
+Scrum <>
+
+Produkto savininkas - komandos narys atsakingas už produkto savybių ir atributų nustatymą. Apžvelgia atliktą darbą, padeda išbandyti
+
+Product backlog - darbų {klaidos, funkcijos, patobulinimai}, kurie dar nepadaryti
+
+Kūrėjų komanda - savarankiškai organizuojama komanda (5-8 žm.)
+
+Sprintas - 2-3 sav. per kurias sukuriamas PS prieaugis
+
+Scrum - daily meet apžvelgti pažangą ir susitarti dienos planus
+
+Potentially shippage product increment - aukštos kokybės sprinto rezultatas, kurį galima teikti klientui
+
+Velocity - kiek komanda gali nuveikti per sprintą.
+
+Savybės, scenarijai, istorijos <>
+
+Savybė - funkcionalumo fragmentas, įgyvendinantis tam tikrus naudotojo poreikius arba sistemos reikalavimus (kažkas ko reikia ar nori naudotojas)
+
+šablonas: <veiksmas(kas?)><rezultatas(ką?)<objektas(kam?>
+
+Persona - įsivaizduojamas naudotojas ar jų grupė, kuris naudos PS
+
+
+Scenarijus - pasakojimas, kai naudotojas naudojasi PS funkcijomis norėdamas padaryti tai, ką nori.
+
+Naudotojų istorijos - smulkesni pasakojimai, kuo išsamiau išdėstomas vienas dalykas, kurio norima iš PS
+
+Kaip <kažkas>, aš <noriu> <kažką padaryti>
+
+Koncepcinis modeliavimas, Modeliai, UML <>
+
+Modelis - aiškiai nusakytą tikslinę paskirtį turintis supaprastintas sistemos, proceso, reiškinio ar kokio nors kito originalo analogas, tapatus tam originalui modeliavimo tikslų požiūriu. (XD ?)
+
+Kuriami modeliai:
+> Esamos sistemos (stiprybėms ir silpnybėms išsiaiškinti)
+> Naujos sistemos (improved)
+
+Modelis - tam tikros sistemos abstrakcija
+Požiūris - vaizduoja pasirinktus modelio aspektus
+Notacija - aibė taisyklių (Vaizdavimo/aprašymo), leidžiančių vaizduoti požiūrį.
+
+Abstrakcija - neesminių detalių ignoravimas
+Moduliškumas - sistemos turi būti kuriamos iš rišlių, silpnai sukibusių komponentų (modulių)
+
+Modulis - komponentas, sudarytas iš vienos ar daugiau funkcijų, turintis sąsajas su kitais moduliais, sugedus lengvai keičiamas
+
+Inkapsuliacija - objekto vidiniai duomenys slepiami, jais galima manipuliuoti naudojant objekto viešus metodus.
+
+UML užduočių diagramos <>
+
+Aktorius - asmuo/sistema/prietaisas, turintis poveikį sėkmingam sistemos veikimui
+Užduotis - nurodo pagrindines sistemos funkcines savybes.
+Asociacija - nustato sąveiką tarp aktoriaus ir užduoties
+
+<<include>> - apimti {použduotis}
+<<extend>> - išplėsti {po-užduotis} !su sąlyga!
+<---- - apibendrinti [pvz. keli aktoriai turi vienodą užduotį ir yra panašūs, generalizuojami į vieną]
+
+Scenarijus - seka žingsnių, aprašančių aktorių ir sistemos sąveiką.
+
+Yra pagrindinis scenarijus ir alternatyvūs
+
+Alternatyvūs:
+> atkuriamieji (recovery) - pasitaikant ypatingoms situacijoms, tikslas vis tiek pasiekiamas
+> Nesėkmės - pasitaikant ypatingoms situacijoms, tikslas nepasiekiamas
+
+Scenarijaus sprogimas - atsiranda per daug užduočių. 
+> Sprendimas - include, extend
+
+UML veiklos diagramos <>
+
+Apibrėžimas - UML elgsenos diagrama, modeliuojanti valdymo arba objekto srautą.
+
+Sekų diagrama <>
+
+Parodo sąveikos laike struktūrą.
+
+Elementai:
+> Vaidmenys:
+	a) Agentai (actors)
+	b) objektai
+> Pranešimai:
+	a) sinchroniniai - Vaizduoja kvietimo operaciją, kuri siunčia pranešimą, stabdydama jį pasiuntusio objekto darbą, kol bus gautas atsakymas
+	b) asinchroniniai - kaip sinchroninis bet nestabdo pasiuntusio objekto darbo
+	c) konstruktoriai - kuria objektą
+	d) destruktoriai - šalina objektą
+	e) rekursyvūs - pranešimas sau
+	f) signalai
+	g) atsako (return) - brūkšninė strėlė
+> Gyvavimo atkarpos (lifelines)
+> Aktyvumo stulpeliai (activity boxes)
+> Fragmentai
+	a) valdymo gijos (threads of control)
+> Ribojimai
+	a) Laiko
+> Pastabos
+> Tekstiniai paaiškinimai
+
+Sekų diagramos aprašo objektų komunikavimą laiko tėkmėje, atliekamą keičiantis tarpusavyje pranešimais
+
+#0b0c10 - black
+#1f2833 - dark blue
+#c5c6c7 - gray
+#66fcf1 - light cyan
+#45a29e - dark cyan

@@ -1,0 +1,32 @@
+body {
+    background-color: #1f2833;
+    color: #c5c6c7;
+}
+
+.subject-header {
+    color: #66fcf1;
+    padding: 25px;
+    text-align: center;
+    border-bottom: #66fcf1 solid 3px;
+}
+
+.definition {
+    font-weight: bolder;
+    color: #45a29e;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+img {
+    background-color: #c5c6c7;
+}
